@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+ <header class="header">
+    <a href="" class="logo">Nimal</a>
+    <i class="fa-solid fa-bars" class="menu-icon"></i>
+    <nav class="navbar">
+        <a href="#Home" class="active">Home</a>
+        <a onclick="scrollData('SkILLS')">Skills</a>
+        <a onclick="scrollData('About')">About</a>
+        <a onclick="scrollData('Education')">Education</a>
+        <a onclick="scrollData('Contact')">Contact</a>
+    </nav>
+</header>
+<section class="home" id="home">
+    <div class="home-img">
+        <img src="asset/img/nimal.jpg" alt="">
+    </div>
+    <div class="home-content">
+        <h1>Hi It's <span>Nimal</span></h1>
+        <h3 class="typing-text">I'm a Web Dveloper </h3>
+        <p>Welcome to my portfolio! Here, you'll find a curated collection of my creative endeavors and professional achievements. From web design to digital marketing, each project showcases my dedication to innovation and excellence.</p>
+
+        <div class="social-icon">
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+
+        </div>
+        <a href="" class="btn">Hire Me</a>
+
+    </div>
+
+</section>
+
+
+<section class="SkILLS" id="SkILLS">
+<h1 class="t">SkILLS</h1>
+<div class="box">
+    <div class="one">
+        <h4>HTML</h4>
+        <h4>CSS</h4>
+        <h4>BOOSTRAP</h4>
+
+    </div>
+    <div class="two">
+        <h4>JAVASCRIPT</h4>
+        <h4>PHP</h4>
+        <h4>REACT</h4>
+    </div>
+    
+</div>
+<div class="pic">
+<img class="p1" src="asset/img/html.png" alt="logo" height="150" width="150">
+<img class="p2"src="asset/img/css.png" alt="logo" height="150" width="150">
+<img class="p3"src="asset/img/boostrap.png" alt="logo" height="150" width="150">
+<img class="p4"src="asset/img/js.png" alt="logo" height="150" width="150">
+<img class="p5"src="asset/img/php.png" alt="logo" height="150" width="150">
+<img class="p6"src="asset/img/react.png" alt="logo" height="150" width="150">
+</div>
+</section>
+
+
+
+
+
+<div class="section" id="About">
+    <div class="hero">
+        <article>
+            <h1 class="clr">ABOUT ME</h1>
+            <p class="cnt">
+                I am a web developer. I can provide clean code and pixel oerfect design.<br>
+                I also make the website more @ more intractive with web animations.<br>
+                A responsive design makes your website accessible to all users,<br>
+                regardless of therir device.</p>
+
+            <h5>NAME</h5>
+            <h6>NIMALPRASANTH</h6>
+            <h5>EMAIL</h5>
+            <h6>nimalapple10@gmail.com</h6>
+            <h5>ROLE</h5>
+            <h6>WEB DEVELOPER</h6>
+            <h5>PHONE</h5>
+            <h6>7904491801</h6>
+            <P></P>
+        </article>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="container" id="Contact">
+    <h2>contact me</h2>
+    <form>
+        <input type="text" placeholder="your name">
+        <input type="email" placeholder="your email">
+        <textarea placeholder="your message"></textarea>
+        <button type="submit">send</button>
+    </form>
+     
+</div>
+
+
+
+
+
+
+ 
+</body>
+<script>
+    function scrollData(idData){
+    console.log("sill");
+    var skill = document.getElementById(idData);
+    skill.scrollIntoView({behavior:"smooth",block:"start"});
+}
+</script>
+</html>
